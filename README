@@ -1,0 +1,30 @@
+Delwink Style
+=============
+
+This repository contains documentation for Delwink's coding conventions. The
+Makefile contains build instructions for all compiled language examples.
+
+Standards
+---------
+
+C code should be restricted to no later a standard than C99, and Makefiles
+should be POSIX-compliant. On GNU systems, use bmake (NetBSD make) to test
+Makefile compatibility.
+
+Shell scripts should be strictly Bourne-compatible, using `#!/bin/sh` at the
+top of the file. Use tabs for indentation, and don't go over 80 columns.
+
+Goal
+----
+
+Delwink strives for cross-compatibility of its software. In compiled languages
+especially, strict adherence to cross-platform standards is key. In addition to
+compatibility of software, we want compatibility between environments as
+well. Our code conventions aim to make it easier to edit source with any editor
+without relying on extensions.
+
+Errors
+------
+
+If you notice a compatibility error, please report it (preferably with a
+solution) to Delwink so that we may update it immediately.
